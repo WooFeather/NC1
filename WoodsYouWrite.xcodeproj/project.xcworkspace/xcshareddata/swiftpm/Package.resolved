@@ -1,6 +1,15 @@
 {
-  "originHash" : "3f7bccddd9f7a6da7c38f78f12dc05fb594b560bb42e698a68570a70f4650e54",
+  "originHash" : "b454c0c089faf4e1924e3652ccaab9edec51a10a360e0cc30d94bdf012bb34e3",
   "pins" : [
+    {
+      "identity" : "calendarview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Mijick/CalendarView.git",
+      "state" : {
+        "revision" : "b347587ba39a023b61881158872db9d01a90a9a6",
+        "version" : "1.0.0"
+      }
+    },
     {
       "identity" : "sdwebimage",
       "kind" : "remoteSourceControl",
@@ -17,6 +26,15 @@
       "state" : {
         "revision" : "22423b017b99ab8ac44e29e6372f571f782af6e4",
         "version" : "3.0.2"
+      }
+    },
+    {
+      "identity" : "swiftuicalendar",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/GGJJack/SwiftUICalendar.git",
+      "state" : {
+        "revision" : "7ecd220909bc25529e35e2addb513a20abbfec82",
+        "version" : "0.1.14"
       }
     }
   ],

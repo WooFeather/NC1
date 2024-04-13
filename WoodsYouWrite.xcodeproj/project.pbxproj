@@ -14,6 +14,10 @@
 		7984F07E2BC81C0D00CA6152 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7984F07D2BC81C0D00CA6152 /* SDWebImageSwiftUI */; };
 		7984F0802BC81C7E00CA6152 /* fire-flame.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7984F07F2BC81C7E00CA6152 /* fire-flame.gif */; };
 		7984F0822BC81DF300CA6152 /* FireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7984F0812BC81DF300CA6152 /* FireView.swift */; };
+		7984F0A82BC8CA3900CA6152 /* SwiftUICalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 7984F0A72BC8CA3900CA6152 /* SwiftUICalendar */; };
+		7984F0AA2BC8CA5C00CA6152 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7984F0A92BC8CA5C00CA6152 /* CalendarView.swift */; };
+		7984F0AD2BC8CDD400CA6152 /* MijickCalendarView in Frameworks */ = {isa = PBXBuildFile; productRef = 7984F0AC2BC8CDD400CA6152 /* MijickCalendarView */; };
+		7984F0B12BCA6DFB00CA6152 /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7984F0B02BCA6DFB00CA6152 /* WriteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,8 @@
 		7984F0752BC81B4D00CA6152 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7984F07F2BC81C7E00CA6152 /* fire-flame.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "fire-flame.gif"; path = "../../fire-flame.gif"; sourceTree = "<group>"; };
 		7984F0812BC81DF300CA6152 /* FireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireView.swift; sourceTree = "<group>"; };
+		7984F0A92BC8CA5C00CA6152 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		7984F0B02BCA6DFB00CA6152 /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7984F0AD2BC8CDD400CA6152 /* MijickCalendarView in Frameworks */,
+				7984F0A82BC8CA3900CA6152 /* SwiftUICalendar in Frameworks */,
 				7984F07E2BC81C0D00CA6152 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,6 +68,8 @@
 				7984F07F2BC81C7E00CA6152 /* fire-flame.gif */,
 				7984F06E2BC81B4B00CA6152 /* WoodsYouWriteApp.swift */,
 				7984F0702BC81B4B00CA6152 /* ContentView.swift */,
+				7984F0B02BCA6DFB00CA6152 /* WriteView.swift */,
+				7984F0A92BC8CA5C00CA6152 /* CalendarView.swift */,
 				7984F0812BC81DF300CA6152 /* FireView.swift */,
 				7984F0722BC81B4D00CA6152 /* Assets.xcassets */,
 				7984F0742BC81B4D00CA6152 /* Preview Content */,
@@ -93,6 +103,8 @@
 			name = WoodsYouWrite;
 			packageProductDependencies = (
 				7984F07D2BC81C0D00CA6152 /* SDWebImageSwiftUI */,
+				7984F0A72BC8CA3900CA6152 /* SwiftUICalendar */,
+				7984F0AC2BC8CDD400CA6152 /* MijickCalendarView */,
 			);
 			productName = WoodsYouWrite;
 			productReference = 7984F06B2BC81B4B00CA6152 /* WoodsYouWrite.app */;
@@ -124,6 +136,8 @@
 			mainGroup = 7984F0622BC81B4B00CA6152;
 			packageReferences = (
 				7984F07C2BC81C0D00CA6152 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				7984F0A62BC8CA3900CA6152 /* XCRemoteSwiftPackageReference "SwiftUICalendar" */,
+				7984F0AB2BC8CDD400CA6152 /* XCRemoteSwiftPackageReference "CalendarView" */,
 			);
 			productRefGroup = 7984F06C2BC81B4B00CA6152 /* Products */;
 			projectDirPath = "";
@@ -154,6 +168,8 @@
 			files = (
 				7984F0822BC81DF300CA6152 /* FireView.swift in Sources */,
 				7984F0712BC81B4B00CA6152 /* ContentView.swift in Sources */,
+				7984F0B12BCA6DFB00CA6152 /* WriteView.swift in Sources */,
+				7984F0AA2BC8CA5C00CA6152 /* CalendarView.swift in Sources */,
 				7984F06F2BC81B4B00CA6152 /* WoodsYouWriteApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,6 +386,22 @@
 				minimumVersion = 3.0.2;
 			};
 		};
+		7984F0A62BC8CA3900CA6152 /* XCRemoteSwiftPackageReference "SwiftUICalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GGJJack/SwiftUICalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.14;
+			};
+		};
+		7984F0AB2BC8CDD400CA6152 /* XCRemoteSwiftPackageReference "CalendarView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Mijick/CalendarView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -377,6 +409,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7984F07C2BC81C0D00CA6152 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
+		};
+		7984F0A72BC8CA3900CA6152 /* SwiftUICalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7984F0A62BC8CA3900CA6152 /* XCRemoteSwiftPackageReference "SwiftUICalendar" */;
+			productName = SwiftUICalendar;
+		};
+		7984F0AC2BC8CDD400CA6152 /* MijickCalendarView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7984F0AB2BC8CDD400CA6152 /* XCRemoteSwiftPackageReference "CalendarView" */;
+			productName = MijickCalendarView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

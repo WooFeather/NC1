@@ -14,10 +14,12 @@ struct FireView: View {
             Image("wood")
                 .resizable()
                 .scaledToFit()
+                .frame(width: 350)
+                .offset(y: 40)
             AnimatedImage(name: "fire-flame.gif")
                 .resizable()
                 .scaledToFit()
-                .opacity(0.9)
+                .opacity(0.95)
         }
     }
 }
