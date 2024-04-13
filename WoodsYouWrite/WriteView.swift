@@ -10,6 +10,8 @@ import SwiftUI
 struct WriteView: View {
     @AppStorage("notes") private var notes = ""
     @State var selectedDate: Date = Date()
+    @State private var showAlert = false
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         NavigationStack {
@@ -22,7 +24,7 @@ struct WriteView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     Button {
-                        // 작성취소(Alert)
+                        showAlert = true
                     } label: {
                         Image(systemName: "xmark")
                             .foregroundStyle(.red)
@@ -40,6 +42,13 @@ struct WriteView: View {
                 }
             }
             .navigationBarBackButtonHidden()
+            .alert("일기를 삭제하시겠습니까?", isPresented: $showAlert) {
+                Button("삭제", role: .destructive) {
+                    notes = "" // 데이터 삭제
+                    dismiss()
+                }
+                Button("취소", role: .cancel) { }
+            }
         }
     }
 }
